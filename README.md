@@ -222,18 +222,17 @@ docker image prune -a -f
 
 ## Project Highlights
 
-- Containerized a custom Nginx web application using Docker
-- Built Docker images using Dockerfile
-- Managed Docker containers and networking
-- Published images to Docker Hub
-- Integrated Docker Hub with Kubernetes
-- Deployed applications on a Kubernetes cluster
-- Created Kubernetes Deployments with multiple replicas
-- Exposed applications using NodePort Services
-- Verified workload scheduling across worker nodes
-- Validated end-to-end application accessibility
-- Performed Docker image and container cleanup
-- Demonstrated practical DevOps deployment workflow
+- Docker Containerization - Containerized a custom Nginx web application using Docker.
+- Docker Image Management - Built and managed Docker images using Dockerfile.
+- Docker Hub Integration - Published custom images to Docker Hub.
+- Container Deployment - Executed and validated containers locally.
+- Kubernetes Deployment - Deployed workloads on a Kubernetes multi-node cluster.
+- Replica Management - Created Deployments with multiple replicas.
+- Service Exposure - Exposed applications using NodePort Services.
+- Application Validation - Verified end-to-end browser accessibility.
+- Troubleshooting Experience - Resolved Docker authentication and deployment-related issues.
+- Resource Optimization - Performed Docker image and container cleanup.
+- DevOps Workflow - Demonstrated a complete Docker-to-Kubernetes deployment pipeline.
 
 ---
 
@@ -299,6 +298,64 @@ docker image prune -a -f
 ![Cleanup](screenshots/docker-cleanup.png)
 
 ---
+
+## Troubleshooting Experience
+
+During the implementation of this project, several real-world issues were encountered and resolved:
+
+### Docker Permission Denied Error
+
+- Encountered permission denied while accessing the Docker daemon socket.
+- Resolved by executing Docker commands with appropriate privileges.
+- Successfully validated Docker installation using the hello-world container.
+
+### Docker Hub Authentication Failure
+
+- Initial Docker login attempts failed due to incorrect credentials.
+- Verified Docker Hub account details and retried authentication.
+- Successfully established Docker Hub access.
+
+### Docker Image Tagging and Repository Management
+
+- Local Docker images were not accessible to Kubernetes worker nodes.
+- Tagged images using Docker Hub repository conventions.
+- Published images successfully to a centralized registry.
+
+### Kubernetes Image Pull Validation
+
+- Verified successful image retrieval from Docker Hub.
+- Ensured image availability across all worker nodes.
+- Confirmed container startup after image download.
+
+### Pod Initialization Monitoring
+
+- Observed pods in ContainerCreating state during deployment.
+- Monitored pod lifecycle and image pull progress.
+- Verified successful transition to Running state.
+
+### Service Exposure and Accessibility
+
+- Configured Kubernetes NodePort Service.
+- Verified service creation and port assignment.
+- Successfully accessed the application through the browser.
+
+### Docker Resource Cleanup
+
+- Performed container and image cleanup using Docker prune commands.
+- Reclaimed storage space and optimized system resources.
+- Verified cleanup using Docker system reports.
+
+### End-to-End Validation
+
+Successfully verified:
+
+- Docker Image Creation
+- Docker Container Execution
+- Docker Hub Image Publishing
+- Kubernetes Deployment Creation
+- Pod Scheduling Across Worker Nodes
+- NodePort Service Accessibility
+- Browser-Based Application Access
 
 ## Key Learning Outcomes
 
