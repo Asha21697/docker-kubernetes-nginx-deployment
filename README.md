@@ -17,8 +17,5 @@ This project demonstrates how to containerize a custom Nginx web application usi
 6. Verified application accessibility in the browser.
 7. Tagged and pushed the image to Docker Hub.
 
-## Commands Used
-
-### Build Docker Image
-```bash
-docker build -t asha-nginx:v1 .
+## Screenshots
+Project execution screenshots are available in the screenshots folder.
